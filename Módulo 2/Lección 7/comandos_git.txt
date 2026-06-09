@@ -1,0 +1,38 @@
+Comando: git --version
+Definición breve: Muestra la versión instalada de Git
+Ejemplo de uso: git version 2.54.0.windows.1
+
+Comando: git init
+Definición breve: Inicializa un repositorio en la carpeta actual (y queda invisible)
+Ejemplo de uso: git init
+"Initialized empty Git repository in C:/Berta/CURSO - Fullstack Javascript/Proyectos/Javascript/Ejercicios_practico/.git/"                                                                                                               Initialized empty Git repository in C:/Berta/CURSO - Fullstack Javascript/Proyectos/Javascript/Ejercicios_practico/.git/
+
+Comando: git add
+Definición breve: Agrega cambios al área de preparación (staging)
+Ejemplo de uso: git add . (agrega todos los archivos)
+
+Comando: git commit
+Definición breve: Registra los cambios con un mensaje descriptivo y confirmo la instrucción anterior.
+Ejemplo de uso: git commit -m "Primer commit"
+"[master (root-commit) 5f32310] Primer commit
+ 5 files changed, 140 insertions(+)
+ create mode 100644 "M\303\263dulo 2/Lecci\303\263n 4/ASSETS/css/style.css"
+ create mode 100644 "M\303\263dulo 2/Lecci\303\263n 4/ASSETS/img/Circe_Offering_the_Cup_to_Odysseus.jpg"
+ create mode 100644 "M\303\263dulo 2/Lecci\303\263n 4/ASSETS/img/vista_ipad.PNG"
+ create mode 100644 "M\303\263dulo 2/Lecci\303\263n 4/ASSETS/img/vista_movil.PNG"
+ create mode 100644 "M\303\263dulo 2/Lecci\303\263n 4/index.html"
+
+Comando: git status
+Definición breve: Muestra el estado del repositorio
+Ejemplo de uso: git status
+"On branch main
+Your branch is up to date with 'origin/main'.
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        "M\303\263dulo 2/Lecci\303\263n 4.zip"
+        "M\303\263dulo 2/Lecci\303\263n 7/"
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+C:\Berta\CURSO - Fullstack Javascript\Proyectos\Javascript\Ejercicios_practico>"
