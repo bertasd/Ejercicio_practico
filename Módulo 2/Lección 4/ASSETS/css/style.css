@@ -1,0 +1,70 @@
+@media (min-width: 576px) { /* tablet chico */ }
+@media (min-width: 992px) { /* desktop */}
+
+/* 1. Define the grid and map names on the parent container */
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto 1fr auto;
+  
+  grid-template-areas:
+    "header  header  header"
+    "nav nav nav"
+    "content content sidebar"
+    ".       .       sidebar"
+    "footer  footer  footer";
+}
+
+html, body{
+    overflow-x: hidden;/* Para evitar scroll horizontal */
+    max-width: 100vw; /* El ancho exacto de la pantalla visible */
+    background-color: lightblue;    
+}
+
+/* 2. Map child elements to the layout names */
+.main-header {
+    display: flex;
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.main-header div {
+  display: flex;  
+  background-color:rgb(19, 19, 19);
+  color: rgb(245, 244, 239);
+  margin: 10px;
+  align-items: center;
+}
+
+.navbar      { 
+    grid-area: nav;
+}
+
+.sidebar     { 
+    grid-area: sidebar;
+    padding: 10px;
+
+}
+
+.content     {
+    grid-area: content;
+    padding: 10px;
+}
+
+.imagen_circe {
+    display: block; /* Elimina espacios en blanco debajo de las imágenes */
+    width: 50%; /* Era 440px y se cambio a porcentaje para no afectar responsividad*/       
+    height: auto;
+    /*height: 300; usar esta altura desproporciona la imagen*/  
+    margin: auto;
+}
+
+.main-footer {
+    display: grid;
+    grid-area: footer;
+    place-items: center;
+    background-color:rgb(19, 19, 19);
+    color: rgb(245, 244, 239);
+    padding: 5px;
+}
+
